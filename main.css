@@ -1,0 +1,141 @@
+*{
+	box-sizing: border-box;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: block;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+body{
+    font-family: segoe UI;
+}
+section{
+    display: flex;
+    flex-direction: right;
+}
+.side1{
+    background-image: url(backg.jpg);
+    width: 500px;
+    height: 670px;
+}
+img{
+    width: 100px;
+    height: 100px;
+    padding: 3rem;
+}
+.side2{
+    background-color: dodgerblue;
+    line-height: 1rem;
+    width: 1000px;
+    text-align: center;
+}
+nav{
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+    margin-top: 10rem;
+    margin-right: 5rem;
+    margin-bottom: 0px;
+    
+}
+ul {
+    list-style-type: none;
+    background-color: transparent;
+    margin-left: 10rem;
+    margin-top: 0rem;
+ }
+ li a{
+    float: left;
+   display: flex;
+   color: white;
+   text-align: center;
+   padding: 10px;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    
+}
+form{
+    display: flex;
+	flex-direction: column;
+	padding: 1.5rem;
+	border-radius: 5px;
+	text-align: center
+        
+}
+.form input {
+	padding: 1rem;
+	background: #f8f9fa;
+	border: 0.5px solid #eee;
+	margin-bottom: 1rem;
+	border-radius: 5px;
+    margin-left: 12rem;
+    margin-right: 20rem;
+    margin-top: 0.0002px;
+ }
+ button{
+    background-color: white;
+    padding: 1rem;
+    width: 80px;
+    height: 40px;
+    margin-left: 12rem;
+    color:dodgerblue ;
+    text-align: center;
+    border: 0.5px solid #eee;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+.fa-brands{
+border: solid 1px black;
+padding: 0.5rem;
+border-radius: 100%;
+margin-top: 5px;
+}
+
+.search{
+position: relative;
+display: flex;
+border: solid 2px black;
+border-radius: 20px;
+padding: 5px;
+margin: 0px auto;
+box-shadow: 0 0 10px grey;
+width: 80%;
+}
+
+.search input{
+border: none;
+outline: none;
+width: 100%;
+font-size: 20px;
+margin-left: 15px;
+}
+
+.search i{
+font-size: 30px;
+color: green;
+margin-right: 15px;
+cursor: pointer;
+}
